@@ -2,7 +2,7 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { Difficulty, QuizQuestion, SummaryData, ExampleItem, TextbookSection } from "../types";
 
 // Create a new GenAI instance for each call to ensure the latest API key is used.
-const getGenAI = () => new GoogleGenAI({ apiKey: process.env.API_KEY });
+const getGenAI = () => new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
 
 const MODEL_TEXT = 'gemini-2.5-flash';
 
